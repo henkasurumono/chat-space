@@ -1,62 +1,60 @@
-!!!
-%html
-  
-   
-  %body
-    .flash-box
-      .notice グループを編集しました
-    .wrapper
-      .chat-side
-        .side-header
-          .side-header__box
-            %p.side-header__box__user-name Yuho
-            %ul.side-header__box__menu
-              %li.side-header__box__menu__new-group
-                %a{:href => "/groups/new"}
-                  %i.fa.fa-edit
-              %li.side-header__box__menu__edit-user
-                %a{:href => "/users/1123/edit"}
-                  %i.fa.fa-cog
-        .groups
-          -# %a{:href => "/groups/2468/messages"}
-          =link_to "#https://www.facebook.com/", class: "groups" do
-            .group
-              %p.group__group-name huu
-              %p.group__latest-message soccer
-      .chat-main
-        .main-header
-          .main-header__left-box
-            %h2.main-header__left-box__current-group{"data-group_id": "2468"}
-              huu
-            %ul.main-header__left-box__member-list
-              Member：
-              %li.main-header__left-box__member-list__member Yuho
-          -# %a{:href => "/groups/2468/edit"}
-          =link_to "#https://www.facebook.com/", class: "main-header__left-box__member-list__member" do
-            .main-header__edit-btn Edit
-        .messages
-          .message{"data-message_id": "6562"}
-            .message__upper-info
-              %p.message__upper-info__talker Yuho
-              %p.message__upper-info__date 2019/07/16(Tue) 12:05:31
-            %p.message__text soccer
-          .message{"data-message_id": "6563"}
-            .message__upper-info
-              %p.message__upper-info__talker Yuho
-              %p.message__upper-info__date 2019/07/16(Tue) 12:05:51
-            %p.message__text goal
-          .message{"data-message_id": "6584"}
-            .message__upper-info
-              %p.message__upper-info__talker Yuho
-              %p.message__upper-info__date 2019/07/16(Tue) 15:00:29
-            %p.message__text ok
-        .form
-          %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/2468/messages", enctype: "multipart/form-data", method: "post"}
-            %input{name:  "utf8", type:  "hidden", value: "✓"}/
-            %input{name: "authenticity_token", type:  "hidden", value:  "FGm/iomtB9rYO0iBV9sE+pU9DIbnhuUrvv/ZOfKHgYamohycu4mDHSyaZvv0zBt2FhGC9uj0VOJVz2ZCzImh4Q=="}/
-            .input-box
-              %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
-              %label.input-box__image{for: "message_image"}
-                %i.fa.fa-image
-                %input#message_image.input-box__image__file{name: "message[image]", type:  "file"}/
-            %input.submit-btn{"data-disable-with": "Send", name:  "commit", type:  "submit", value:  "Send"}/
+.flash-box
+  .notice グループを編集しました
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name Yuho
+        %ul.side-header__box__menu
+          %li.side-header__box__menu__new-group
+            
+            =link_to "#", class: "groups-bot" do
+              %i.fa.fa-edit
+          %li.side-header__box__menu__edit-user
+           
+            =link_to "#", class: "groups-bot" do
+              %i.fa.fa-cog
+    .groups
+     
+      =link_to "#", class: "groups-bot" do
+        .group
+          %p.group__group-name huu
+          %p.group__latest-message soccer
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group{"data-group_id": "2468"}
+          huu
+        %ul.main-header__left-box__member-list
+          Member：
+          %li.main-header__left-box__member-list__member Yuho
+      -# %a{:href => "/groups/2468/edit"}
+      =link_to "#", class: "main-header__left-box__member-list__member" do
+        .main-header__edit-btn Edit
+    .messages
+      .message{"data-message_id": "6562"}
+        .message__upper-info
+          %p.message__upper-info__talker Yuho
+          %p.message__upper-info__date 2019/07/16(Tue) 12:05:31
+        %p.message__text soccer
+      .message{"data-message_id": "6563"}
+        .message__upper-info
+          %p.message__upper-info__talker Yuho
+          %p.message__upper-info__date 2019/07/16(Tue) 12:05:51
+        %p.message__text goal
+      .message{"data-message_id": "6584"}
+        .message__upper-info
+          %p.message__upper-info__talker Yuho
+          %p.message__upper-info__date 2019/07/16(Tue) 15:00:29
+        %p.message__text ok
+    .form
+      %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/2468/messages", enctype: "multipart/form-data", method: "post"}
+        %input{name:  "utf8", type:  "hidden", value: "✓"}/
+        %input{name: "authenticity_token", type:  "hidden", value:  "FGm/iomtB9rYO0iBV9sE+pU9DIbnhuUrvv/ZOfKHgYamohycu4mDHSyaZvv0zBt2FhGC9uj0VOJVz2ZCzImh4Q=="}/
+        .input-box
+          %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+          %label.input-box__image{for: "message_image"}
+            %i.fa.fa-image
+            %input#message_image.input-box__image__file{name: "message[image]", type:  "file"}/
+        %input.submit-btn{"data-disable-with": "Send", name:  "commit", type:  "submit", value:  "Send"}/              
+      

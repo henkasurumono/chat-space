@@ -3,63 +3,36 @@
   box-sizing: border-box;
 }
 
-// html{
-//   display: block;
-// }
 
-// div {
-//     display: block;
-// }
 
-// p {
-//   display: block;
-//   margin-block-start: 1em;
-//   margin-block-end: 1em;
-//   margin-inline-start: 0px;
-//   margin-inline-end: 0px;
-// }
 
-// ul {
-//   margin-block-start: 1em;
-//   margin-block-end: 1em;
-//   margin-inline-start: 0px;
-//   margin-inline-end: 0px;
-//   padding-inline-start: 40px;
-// }
-// li {
-//   display: list-item;
-//   text-align: -webkit-match-parent;
-// }
 
-// .vsc-initialized{
-//   width: 714px;
-//   height:24px;
 
-// }
 
 
 
 
 
   .flash-box {
-    color:rgb(255, 255, 255);
+    color: white;
     font-size: 1rem;
     font-weight: lighter;
     text-align: center;
     width: 100vw;
-    // display: flex;
+    
     
     .notice{
       background-color: #38aef0;
-
     }
   }
 
   .wrapper{
     .chat-side {
+      height: 100vh;
       width: 300px;
       color: white;
       float: left;
+
       .side-header{
         background-color: #253141;
           height: 100px;
@@ -127,6 +100,7 @@
 
     }
     .chat-main{
+      height: 100vh;
       width: calc(100vw - 300px);
       float: left;
       .main-header{
