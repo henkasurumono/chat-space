@@ -8,15 +8,15 @@
         %ul.side-header__box__menu
           %li.side-header__box__menu__new-group
             -# %a{:href => "/groups/new"}
-            =link_to "#https://www.facebook.com/", class: "groups-bot" do
+            =link_to "#", class: "groups-bot" do
               %i.fa.fa-edit
           %li.side-header__box__menu__edit-user
-            %a{:href => "/users/1123/edit"}
-            =link_to "#https://www.facebook.com/", class: "groups-bot" do
+            -# %a{:href => "/users/1123/edit"}
+            =link_to "#", class: "groups-bot" do
               %i.fa.fa-cog
     .groups
      
-      =link_to "#https://www.facebook.com/", class: "groups-bot" do
+      =link_to "#", class: "groups-bot" do
         .group
           %p.group__group-name huu
           %p.group__latest-message soccer
@@ -29,7 +29,7 @@
           Member：
           %li.main-header__left-box__member-list__member Yuho
       -# %a{:href => "/groups/2468/edit"}
-      =link_to "#https://www.facebook.com/", class: "main-header__left-box__member-list__member" do
+      =link_to "#", class: "main-header__left-box__member-list__member" do
         .main-header__edit-btn Edit
     .messages
       .message{"data-message_id": "6562"}

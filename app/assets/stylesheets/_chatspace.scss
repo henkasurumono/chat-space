@@ -3,33 +3,7 @@
   box-sizing: border-box;
 }
 
-// html{
-//   display: block;
-// }
 
-// div {
-//     display: block;
-// }
-
-// p {
-//   display: block;
-//   margin-block-start: 1em;
-//   margin-block-end: 1em;
-//   margin-inline-start: 0px;
-//   margin-inline-end: 0px;
-// }
-
-// ul {
-//   margin-block-start: 1em;
-//   margin-block-end: 1em;
-//   margin-inline-start: 0px;
-//   margin-inline-end: 0px;
-//   padding-inline-start: 40px;
-// }
-// li {
-//   display: list-item;
-//   text-align: -webkit-match-parent;
-// }
 
 
 
@@ -40,16 +14,15 @@
 
 
   .flash-box {
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 100vw;
     
     
     .notice{
       background-color: #38aef0;
-      font-size:16px;
-      color: white;
-      text-align: center;
-
-
-
     }
   }
 
