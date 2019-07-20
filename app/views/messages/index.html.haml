@@ -1,10 +1,10 @@
-.flash-box
-  .notice グループを編集しました
+
 .wrapper
   .chat-side
     .side-header
       .side-header__box
-        %p.side-header__box__user-name Yuho
+        %p.side-header__box__user-name
+          = current_user.name
         %ul.side-header__box__menu
           %li.side-header__box__menu__new-group
             
@@ -12,8 +12,8 @@
               %i.fa.fa-edit
           %li.side-header__box__menu__edit-user
            
-            =link_to "#", class: "groups-bot" do
-              %i.fa.fa-cog
+            = link_to edit_user_path(current_user) do
+              = fa_icon 'cog', class: 'icon'
     .groups
      
       =link_to "#", class: "groups-bot" do
@@ -28,7 +28,7 @@
         %ul.main-header__left-box__member-list
           Member：
           %li.main-header__left-box__member-list__member Yuho
-      -# %a{:href => "/groups/2468/edit"}
+      
       =link_to "#", class: "main-header__left-box__member-list__member" do
         .main-header__edit-btn Edit
     .messages
